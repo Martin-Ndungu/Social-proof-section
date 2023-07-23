@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'League Spartan', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(0, 0%, 100%);
+  font-size: 15px;
+  min-height: 100vh;
+}
+.container{
+  width: 100%;
+  padding: 70px 150px;
+}
+.header{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 60px;
+}
+.info{
+  max-width: 350px;
+  
+}
+.info h2{
+  font-size: 32px;
+  margin:0 100px 20px 0;
+  color:  hsl(300, 43%, 22%);
+}
+.info p{
+  color:hsl(300, 43%, 22%);
+}
+.ratings{
+  width:410px;
+}
+.ratings .box{
+ margin:10px 0 ;
+ background: hsl(300, 24%, 96%);
+ padding: 10px 15px;
+ border-radius: 3px;
+ width: 350px;
+ display: flex;
+ align-items: center;
+}
+.box p{
+  color:hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.box span{
+  padding-right:15px;
+}
+.box span i{
+  margin-left: 5px;
+  color:hsl(39, 97%, 64%);
+}
+.box.two{
+  margin-left:30px ;
+}
+.box.three{
+  margin-left: 60px;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+.card {
+  width: 300px;
+  height: auto;
+  background: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  padding: 25px 15px 25px 25px;
+  height: 165px;
+}
+.card .title{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+.card .title img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.title h2{
+  color: hsl(0, 0%, 100%);
+}
+.title p{
+  font-size: 21px;
+  color: hsl(333, 80%, 67%);
+  font-weight: 500;
+}
+.card .description p{
+  color:hsl(0, 0%, 100%);
+}
+.card.two{
+  margin-top: 10px;
+}
+.card.three{
+  margin-top: 20px;
+}
+@media screen and (max-width:768px){
+  body{
+  min-height: 100vh;
+  }
+  .container{
+    width: 350px;
+    margin: 20px auto;
+    padding: 37px;
+    min-height: 100vh;
+  }
+  .header{
+    flex-direction: column;
+    
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+  }
+  .info h2{
+    margin: 10px 20px 15px;
+  }
+ .ratings{
+  width: 100%;
+
+ }
+ .ratings .box{
+  width: 100%;
+  margin: 10px 0;
+  flex-direction: column;
+  background: hsl(300, 24%, 96%)
+ }
+ .ratings .box .stars{
+  margin-bottom: 7px;
+ }
+ .header{
+  margin-bottom:40px;
+ }
+ .cards{
+  flex-direction: column;
+ }
+ .card{
+  width: 276px;
+ }
+}
